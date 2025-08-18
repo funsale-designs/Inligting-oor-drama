@@ -1,63 +1,67 @@
-/* Styl vir die kop-beeld */
-.header-img {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Styl vir die afdeling-beelde */
-.section-img {
-    display: block;
-    margin: 15px auto;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 /* Basiese styl vir die hele bladsy */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Georgia', serif; /* 'n Klassieke font vir 'n teater-gevoel */
+    line-height: 1.8;
     margin: 0;
-    padding: 20px;
-    background-color: #f4f4f4;
+    padding: 30px;
+    background-color: #F8F4E1; /* 'n Sagte, warm agtergrondkleur */
     color: #333;
 }
 
 /* Styl vir die hoofopskrif */
 h1 {
-    color: #444;
+    font-family: 'Times New Roman', serif;
+    color: #A32929; /* 'n Diep rooi, soos 'n teatergordyn */
     text-align: center;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #FFD700; /* Goue lyn vir 'n luukse gevoel */
+    padding-bottom: 10px;
+}
+
+/* Styl vir die ondertitels en afdeling-opskrifte */
+h2, h3 {
+    font-family: 'Times New Roman', serif;
+    color: #4B0082; /* 'n Donker pers vir 'n kreatiewe, dramatiese toon */
+    border-left: 5px solid #FFD700;
+    padding-left: 10px;
+}
+
+/* Styl vir die teks-paragrawe */
+p {
+    font-size: 1.1em;
 }
 
 /* Styl vir afdelings */
 section {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #FFF;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Sagte skaduwee vir diepte */
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: translateY(-5px); /* 'n Subtiele effek wanneer die muis oorbeweeg */
 }
 
 /* Styl vir die kop */
 header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 /* Styl vir die voetskrif */
 footer {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 50px;
     font-size: 0.9em;
     color: #777;
 }
 
-/* Styl vir ongenommerde lyste */
+/* Styl vir die lyste */
 ul {
     list-style-type: none;
     padding: 0;
@@ -65,21 +69,27 @@ ul {
 
 ul li {
     margin-bottom: 10px;
-    background: #e9ecef;
-    padding: 10px;
-    border-radius: 5px;
+    background: #F0E6EF; /* 'n Ligte pers skakering vir die lyste */
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 3px solid #8A2BE2; /* 'n Blou-violet lyn vir aksent */
+}
+
+ol li {
+    margin-bottom: 15px;
 }
 
 /* Styl vir die instruksieteks voorbeeld */
 pre {
-    background: #f8f9fa;
-    padding: 15px;
-    border: 1px solid #ced4da;
-    border-left: 5px solid #007bff;
+    background: #FFFAF0; /* Warm geel/wit agtergrond */
+    padding: 20px;
+    border: 1px dashed #D2B48C; /* 'n Gestreepte rand */
+    border-left: 6px solid #B8860B; /* Donkerder goud-geel lyn */
     overflow-x: auto;
+    font-family: 'Courier New', monospace;
 }
 
 /* Styl vir vetgedrukte teks binne lyste */
 ul li strong {
-    color: #007bff;
+    color: #A32929;
 }
