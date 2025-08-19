@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dramastruktuur en Kenmerke</title>
-    <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,37 +11,49 @@
             color: #333;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
 
         header {
             background-color: #c44569;
             color: white;
             text-align: center;
-            padding: 2rem;
+            padding: 2rem 1rem;
         }
 
         nav {
             background-color: #786fa6;
-            padding: 1rem;
-            text-align: center;
+            display: flex;
+            flex-wrap: wrap; /* laat dit op klein skerms vou */
+            justify-content: center;
+            padding: 0.5rem;
         }
 
         nav a {
             color: white;
-            margin: 0 15px;
+            margin: 5px 10px;
             text-decoration: none;
             font-weight: bold;
+            font-size: 1rem;
+            padding: 0.5rem 0.75rem;
+            border-radius: 8px;
+            transition: background 0.3s;
         }
 
         nav a:hover {
-            text-decoration: underline;
+            background-color: #574b90;
+        }
+
+        main {
+            padding: 1rem;
         }
 
         section {
-            padding: 2rem;
-            margin: 1rem;
+            padding: 1.5rem;
+            margin: 1rem auto;
             background-color: #ffffff;
             border-radius: 12px;
+            max-width: 900px; /* hou dit leesbaar op desktop */
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
@@ -56,6 +67,24 @@
             text-align: center;
             padding: 1rem;
             margin-top: 2rem;
+        }
+
+        /* Maak mobiele weergawe meer kompak */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.6rem;
+            }
+            nav {
+                flex-direction: column; /* links onder mekaar */
+            }
+            nav a {
+                display: block;
+                margin: 5px auto;
+                font-size: 1rem;
+            }
+            section {
+                padding: 1rem;
+            }
         }
     </style>
 </head>
@@ -100,12 +129,10 @@
                 <li>As 'n karakter nooit bang is nie, is sy eienskap <strong>dapper</strong>.</li>
                 <li>As 'n karakter vinnig kwaad word, is sy eienskap <strong>kort van draad</strong>.</li>
             </ul>
-            <p>Hierdie eienskappe help die gehoor om die karakter beter te verstaan en maak die drama meer interessant.</p>
         </section>
 
         <section id="struktuur">
             <h2>Die Struktuur van 'n Drama</h2>
-            <p>'n Drama het 'n sekere volgorde of bou wat die storie help vertel.</p>
             <ol>
                 <li><strong>Inleiding:</strong> Die begin van die drama. Hier ontmoet ons die karakters en sien waar die drama afspeel.</li>
                 <li><strong>Probleem / Konflik:</strong> Iets verkeerd of moeilik gebeur. Dit maak die storie interessant.</li>
@@ -113,26 +140,16 @@
                 <li><strong>Klimaks:</strong> Die belangrikste en spannendste deel van die drama. Die probleem raak baie groot of daar gebeur iets dramaties.</li>
                 <li><strong>Afloop / Oplossing:</strong> Die probleem word opgelos of die storie eindig. Dit kan 'n gelukkige of hartseer einde hê.</li>
             </ol>
-            <h3>Kort voorbeeld:</h3>
-            <p>'n Meisie verloor haar hond (inleiding). Sy soek oral (probleem ontwikkel). Sy hoor die hond het vasgesit in 'n heining (klimaks). Sy red hom (oplossing).</p>
+            <p><em>Kort voorbeeld:</em> 'n Meisie verloor haar hond (inleiding). Sy soek oral (probleem ontwikkel). Sy hoor die hond het vasgesit in 'n heining (klimaks). Sy red hom (oplossing).</p>
         </section>
 
         <section id="instruksieteks">
             <h2>Instruksieteks in Drama</h2>
-            <p>In 'n drama is 'n instruksieteks die deel wat vir die akteurs sê wat om te doen. Dit wys die stappe of instruksies om die storie reg op te voer.</p>
-            <h3>Kenmerke:</h3>
-            <ul>
-                <li><strong>Instruksies vir aksie:</strong> sê wat die karakter moet doen, bv. "Loop na die deur" of "Skree vir hulp."</li>
-                <li><strong>Instruksies vir stem:</strong> sê hoe die karakter moet praat, bv. "Fluister sag" of "Skree kwaad."</li>
-                <li><strong>Instruksies vir gesig of liggaam:</strong> bv. "Kruis jou arms" of "Kyk hartseer."</li>
-                <li><strong>Kort en duidelik:</strong> dit moet maklik wees om te volg.</li>
-            </ul>
             <h3>Voorbeeld:</h3>
             <pre><code>Karakters: Anna en Piet
 Anna staan by die tafel en kyk hartseer.
 Piet hardloop na Anna en sê: "Wat het gebeur?"
 Anna sit haar hande op haar gesig en fluister: "Ek het my kat verloor."</code></pre>
-            <p>Hierdie instruksies help die akteurs om presies te weet hoe om die storie te speel.</p>
         </section>
     </main>
 
